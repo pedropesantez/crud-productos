@@ -15,8 +15,8 @@ generados mediante transacciones de Firebase.
 
 ## Enlaces del proyecto
 
-- Aplicación web: https://TU-PROYECTO.vercel.app
-- Repositorio: https://github.com/TU-USUARIO/crud-productos
+- Aplicación web: https://crud-productos-alpha.vercel.app/
+- Repositorio: https://github.com/pedropesantez/crud-productos
 
 ## Tecnologías utilizadas
 
