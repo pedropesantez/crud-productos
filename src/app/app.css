@@ -1,0 +1,301 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+
+.encabezado {
+  background: #172b4d;
+  color: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.encabezado h1 {
+  margin: 12px 0;
+  font-size: 32px;
+}
+
+.encabezado p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.etiqueta {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #93c5fd;
+}
+
+/* Estado de conexión */
+
+.estado-conexion {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #475569;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+/* Tarjetas */
+
+.tarjeta {
+  background: white;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+h2 {
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+
+.subtitulo {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Formulario */
+
+.formulario-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #dc2626;
+}
+
+.validacion {
+  font-size: 12px;
+  color: #b91c1c;
+}
+
+/* Botones */
+
+.acciones-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(0.9);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.guardar {
+  background: #2563eb;
+  color: white;
+}
+
+.cancelar {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.editar {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.eliminar {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Tabla */
+
+.titulo-tabla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.contador {
+  background: #e2e8f0;
+  color: #475569;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.nombre-producto {
+  font-weight: 600;
+}
+
+.categoria {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.acciones {
+  display: flex;
+  gap: 8px;
+}
+
+.vacio {
+  text-align: center;
+  color: #64748b;
+  padding: 30px;
+}
+
+/* Mensajes */
+
+.alerta {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.exito {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* Pie de página */
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* Diseño adaptable */
+
+@media (max-width: 650px) {
+
+  .formulario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta {
+    padding: 18px;
+  }
+
+  .encabezado {
+    padding: 22px;
+  }
+
+  .encabezado h1 {
+    font-size: 25px;
+  }
+
+  .acciones {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,2 @@
+match /productos/{productoId}
+match /contadores/productos
